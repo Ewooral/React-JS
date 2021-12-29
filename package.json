@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ewooral/React-JS/issues"
   },
-  "homepage": "https://github.com/Ewooral/React-JS#readme"
+  "homepage": "https://github.com/Ewooral/React-JS#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }
