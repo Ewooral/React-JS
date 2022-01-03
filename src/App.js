@@ -2,6 +2,7 @@
        import ReactDOM from 'react-dom';
        import Pet from "./Pet";
        import SearchParams from './SearchParams.'
+       import Props from './Props';
        
         // const App = () => {
         // return React.createElement("div", {}, [
@@ -22,6 +23,8 @@
                     <Pet name="Akua Dompoh" age="54" gender="female" />
 
                     <SearchParams />
+
+                    <Props color="Red" name="Elijah" age= "29" weight="50KG" />
   
                 </div>
             )
