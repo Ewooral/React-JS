@@ -6,6 +6,7 @@ import Props from './Props';
 
 
 function Header(props) {
+    console.log(props)
     return (
         <header>
             <h1>This is the Header</h1>
@@ -16,18 +17,18 @@ function Header(props) {
 function Main(props) {
     return (
         <main>
-            <h2></h2>
+            <h2>This is Body</h2>
         </main>
     )
 }
 
-const App = () => {
+const App = () => {  // Here is where components are rendered. 
     return (
         <div>
             <Header />
             <Main />
             <h1>My first React App </h1>
-            <Pet name="Luna" age="4" gender="male" />
+            <Pet name="Luna" age="4" gender="male" />   // You can pass in props values here
             <Pet name="Aboagye" age="16" gender="male" />
             <Pet name="Akua Dompoh" age="54" gender="female" />
             <SearchParams />
