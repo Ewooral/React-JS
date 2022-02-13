@@ -13,10 +13,19 @@ function Header(props) {
     )
 }
 
+function Main(props) {
+    return (
+        <main>
+            <h2></h2>
+        </main>
+    )
+}
+
 const App = () => {
     return (
         <div>
             <Header />
+            <Main />
             <h1>My first React App </h1>
             <Pet name="Luna" age="4" gender="male" />
             <Pet name="Aboagye" age="16" gender="male" />
