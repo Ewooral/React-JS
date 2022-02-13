@@ -1,4 +1,7 @@
 # Let’s recap what happens in this example:
+
+
+
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -8,6 +11,9 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
+
+## When React sees an element representing a user-defined component, it passes JSX attributes and children to this component as a single object. We call this object “props”.
+
 
 
 * We call ReactDOM.render() with the <Welcome name="Sara" /> element.

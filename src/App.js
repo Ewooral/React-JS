@@ -4,19 +4,19 @@ import Pet from "./Pet";
 import SearchParams from './SearchParams.'
 import Props from './Props';
 
-// const App = () => {
-// return React.createElement("div", {}, [
-//     React.createElement("h1", {}, "My first React app"),
-//     // ...[1,2,3,4,5].map(x => React.createElement("h2", null, x)),
-//     React.createElement(Pet, { name: " Luna", age: 4, gender: "female" }),
-//     React.createElement(Pet, { name: " Luna", age: 3, gender: "female" }),
-//     React.createElement(Pet, { name: " Luna", age: 3, gender: "female" }),
-// ]);
-// };
+
+function Header(props) {
+    return (
+        <header>
+            <h1>This is the Header</h1>
+        </header>
+    )
+}
 
 const App = () => {
     return (
         <div>
+            <Header />
             <h1>My first React App </h1>
             <Pet name="Luna" age="4" gender="male" />
             <Pet name="Aboagye" age="16" gender="male" />
