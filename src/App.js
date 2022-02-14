@@ -10,8 +10,7 @@ import Main from './PassingPropsIntoComponents';
 const App = () => {  // Here is where components are rendered. 
     return (
         <div>
-            {/* <Header  /> */}
-            <Main hwoa="Varicocele" eye="itching" />
+            <Main />
             <h1>My first React App </h1>
             <Pet name="Luna" age="4" gender="male" />  
             <Pet name="Aboagye" age="16" gender="male" />
