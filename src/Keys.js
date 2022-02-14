@@ -1,6 +1,11 @@
 import React from 'react';
 
-const dishes = [
+
+
+
+
+const Keys = () => {
+    const dishes = [
     "Ugali",
     "Fried Rice",
     "Eba",
@@ -9,14 +14,11 @@ const dishes = [
     "Beans",
     "Waakye "
 ];
+    const dishObj = dishes.map((value, key) => ({id: key, title: value}))
+    // console.log(dishObj)
 
-const dishObj = dishes.map((value, key) => ({id: key, title: value}))
-console.log(dishObj)
-
-const Keys = () => {
-       return (
-           <h1>{dishes}</h1>
-       )
+       return {dishObj, dishes};
+        
 }
 
  
@@ -24,11 +26,11 @@ const Keys = () => {
 
 
 
+console.log(Keys())
 
 
 
 
 
 
-
-export default Keys
+export default Keys()
