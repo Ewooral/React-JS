@@ -4,19 +4,37 @@ function Header(props) {
    
     return (
         <header>
-            <h1>This is the Header</h1>
+       <React.StrictMode>
+        <h1>This is {props.head} </h1>
+       </React.StrictMode>
         </header>
     )
 }
 
-function Main(props) {
-     console.log(props)
+function Main() {
     return (
         <main>
-            <h2>{props.hwoa} is Body</h2>
-            <h3>{props.eye} is Eye</h3>
+            <React.StrictMode>
+                <h1><Header head="the Header" /></h1>
+                <h4><Footer year={()=>{
+                    let date = new Date();
+                    return date.getFullYear();
+                }} /></h4>
+            </React.StrictMode>
+
         </main>
     )
 }
 
-export default { Header, Main }
+function Footer(props) {
+    return(
+        <footer>
+            <React.StrictMode>
+                <h1>This is the Footer</h1>
+                <h1>Today's date is: {props.year}</h1>
+            </React.StrictMode>
+        </footer>
+    )
+}
+
+export default Main
