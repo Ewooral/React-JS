@@ -1,5 +1,13 @@
 import React from 'react'
+import Keys from './Keys'
 
+
+
+
+
+
+
+ 
 function Header(props) {
    
     return (
@@ -10,23 +18,14 @@ function Header(props) {
         </header>
     )
 }
-const dishes = [
-    "Ugali",
-    "Fried Rice",
-    "Eba",
-    "Fufu",
-    "Rice",
-    "Beans",
-];
- 
 
+ 
 function Main() {
     return (
-        <main>
+        <main style = {style.main}>
             <React.StrictMode>
                 <h1><Header head="the Header" /></h1>
-                <h4><Footer dishes={dishes}/></h4>
-                <h3>Dishes: {}</h3>
+                <h4><Footer dishes={dishObj}/></h4>
             </React.StrictMode>
 
         </main>
@@ -40,7 +39,8 @@ function Footer(props) {
                 <h1>This is the Footer Lists:</h1>
                 <h2> 
                 <ul>
-               { props.dishes.map(dish => <li>{dish}</li>)}
+               { props.dishes.map(dish => (
+                   <li key={dish.id}>{dish.title}</li>))}
                 </ul>
                 </h2>
             </React.StrictMode>
