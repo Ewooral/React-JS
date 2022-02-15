@@ -1,5 +1,5 @@
 import React from 'react'
-import item from './keys';
+import item from './Keys';
 
 // HEADER COMPONENT
 function Header(props){
@@ -14,11 +14,13 @@ function Header(props){
 function Main(props){
     return(
         <div><h1>List of items in our workshop:</h1>
-         {props.list.map( (dish) => 
+         
              <ul>
-                 <li key = {dish.id}> {dish.title}</li>
+              {props.list.map( (dish) =>
+                 (<li key={dish.id}>{dish.title}</li>)
+             )} 
              </ul>
-           )} 
+          
            </div>
     )
 }

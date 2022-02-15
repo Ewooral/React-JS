@@ -13,9 +13,7 @@ const items = [
 ]
 
 const itemObject = items.map((dish, i) => ({id:i, title:dish}))
-console.log(itemObject)
 return itemObject
 
 }
-console.log(Key())
 export default Key()
