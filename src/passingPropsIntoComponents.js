@@ -13,7 +13,13 @@ function Header(props){
 // MAIN COMPONENT
 function Main(props){
     return(
-        <div><h1>This is the </h1></div>
+        <div><h1>List of items in our workshop:</h1>
+         {props.list.map( (dish) => 
+             <ul>
+                 <li key = {dish.id}> {dish.title}</li>
+             </ul>
+           )} 
+           </div>
     )
 }
 
@@ -28,7 +34,7 @@ function PassingPropsIntoComponents(){
     return(
         <React.StrictMode>
             <Header name="Header Page" />,
-            <Main list = {item} />,
+            <Main list = { item }/>,
             <Footer name = "Footer Page" />
         </React.StrictMode>
     )
