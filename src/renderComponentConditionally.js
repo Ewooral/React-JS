@@ -1,24 +1,29 @@
 import React from 'react';
+import UseState from './UseState'
+
+
 
 function SecretComponent(){
     return(
         <> 
+            
             <h1 style = {{color:"red", textAlign:"center"}}> Classified information for authorized users only </h1>
         </>
     )
 }
 
 function RegularComponent(){
+
    return(
         <>
             <h1> Information available for everyone </h1>
+            <UseState />
         </>
    )
 }
 
 function All({authorized}){ // instead of props, we can destructure the props object
-    console.log(authorized)
-   return( // inline tenary if statement
+   return(                  // inline tenary if statement
        <>
            {authorized ? <SecretComponent />  :<RegularComponent />}
        </>
