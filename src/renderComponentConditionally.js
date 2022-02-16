@@ -16,7 +16,7 @@ function RegularComponent(){
 
    return(
         <>
-            <h1> Information available for everyone </h1>
+            <h1 style = {{color:"blue", textAlign:"center"}}> Information available for everyone </h1>
             <UseState />
         </>
    )
