@@ -10,7 +10,8 @@ const App = () => {  // Here is where components are rendered.
         <>
             <RenderComponentConditionally authorized={false} />
             <PassingPropsIntoComponents />
-            <h2>{ArrayDestructuring}</h2>
+            <h2>{ArrayDestructuring.firstItem}</h2>
+            <h2>{ArrayDestructuring.third}</h2>
            
         </>
 
@@ -18,7 +19,7 @@ const App = () => {  // Here is where components are rendered.
 }
 }
 
-console.log(ArrayDestructuring)
+
 
 
 
