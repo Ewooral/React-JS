@@ -9,23 +9,13 @@ const App = () => {  // Here is where components are rendered.
         <>
             <RenderComponentConditionally authorized={false} />
             <PassingPropsIntoComponents />
-            <AppTwo />
+           
         </>
 
     )
 }
 }
 
-function AppTwo(){
-    return(
-        <article>
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Similique delectus hic non.
-            Earum quam, placeat aspernatur similique corporis 
-            molestias voluptates necessitatibus veniam facilis 
-            quia distinctio illo optio. Aut, ab deserunt?
-        </article>
-    )
-}
+
 
 export default App
