@@ -1,4 +1,7 @@
 import React from 'react'
+import Pet from "./Pet";
+import SearchParams from './SearchParams.'
+import Props from './Props';
 import item from './Keys';
 import image from './add_image';
 
@@ -24,6 +27,12 @@ function Main(props){
              </ul>
 
           <img src={image} height={290} alt="add image" />
+    
+            <Pet name="Luna" age="4" gender="male" />  
+            <Pet name="Aboagye" age="16" gender="male" />
+            <Pet name="Akua Dompoh" age="54" gender="female" />
+            <SearchParams />
+            <Props color="Red" name="Elijah" age="29" weight="50KG" />
         </main>
     )
 }
@@ -31,9 +40,12 @@ function Main(props){
 // FOOTER COMPONENT
 function Footer(props){
     return(
-        <footer><h1>This is the {props.name}</h1></footer>
+        <footer>
+             <h1>This is the {props.name}</h1>
+        </footer>
     )
 }
+
 // you can either use React.Fragment or <>
 function PassingPropsIntoComponents(){
     return(
