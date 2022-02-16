@@ -2,8 +2,8 @@ import React from 'react';
 
 function SecretComponent(){
     return(
-        <>
-            <h1> Classified information for authorized users only </h1>
+        <> 
+            <h1 style = {{color:"red"}}> Classified information for authorized users only </h1>
         </>
     )
 }
@@ -17,31 +17,28 @@ function RegularComponent(){
 }
 
 function All(props){
-    if(props.authorized){
-        return(
-            <RegularComponent />
-        )
-    } else{
-return (
-        <>
-            <SecretComponent />
-        </>
-    )
-    }
-    
-    
-}
+   return(
+       <>
+           {props.authorized ? <SecretComponent />  :<RegularComponent />}
+       </>
+   )
 
-/**
+   /** OR 
  *  if(props.authorized){
         return(
         <>
-            <h1>Hello</h1>
-            <All />
+            < SecretComponent />
         </>
           
            
         )
-    } else
+    } else{
+        < RegularComponent />
+    }
  */
+    
+    
+}
+
+
 export default All

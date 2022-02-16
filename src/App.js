@@ -7,7 +7,7 @@ const App = () => {  // Here is where components are rendered.
     {
         return (
         <>
-            <All authorized={true} />
+            <All authorized={false} />
             <PassingPropsIntoComponents />
             <AppTwo />
         </>
