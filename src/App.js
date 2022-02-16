@@ -1,13 +1,13 @@
 import React from 'react';  // In the latest React version its not necessary to import React 
 import PassingPropsIntoComponents from './PassingPropsIntoComponents';
-import All from './RenderComponentConditionally';
+import RenderComponentConditionally from './RenderComponentConditionally';
 
 
 const App = () => {  // Here is where components are rendered. 
     {
         return (
         <>
-            <All authorized={false} />
+            <RenderComponentConditionally authorized={false} />
             <PassingPropsIntoComponents />
             <AppTwo />
         </>

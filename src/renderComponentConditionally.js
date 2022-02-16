@@ -3,7 +3,7 @@ import React from 'react';
 function SecretComponent(){
     return(
         <> 
-            <h1 style = {{color:"red"}}> Classified information for authorized users only </h1>
+            <h1 style = {{color:"red", textAlign:"center"}}> Classified information for authorized users only </h1>
         </>
     )
 }
@@ -17,7 +17,7 @@ function RegularComponent(){
 }
 
 function All(props){
-   return(
+   return( // inline tenary if statement
        <>
            {props.authorized ? <SecretComponent />  :<RegularComponent />}
        </>
@@ -27,7 +27,7 @@ function All(props){
  *  if(props.authorized){
         return(
         <>
-            < SecretComponent />
+            < SecretComponent /> 
         </>
           
            
