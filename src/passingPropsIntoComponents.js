@@ -1,44 +1,47 @@
 import React from 'react'
 import item from './Keys';
+import image from './add_image';
 
 // HEADER COMPONENT
 function Header(props){
     return(
-        <div>
+        <header>
             <h1>this is the {props.name} </h1>
-        </div>
+        </header>
     )
 }
 
 // MAIN COMPONENT
 function Main(props){
     return(
-        <div><h1>List of items in our workshop:</h1>
+        <main style = {{textAlign:"center"}}>
+          <h1>List of items in our workshop:</h1>
          
              <ul>
-              {props.list.map( (dish) =>
-                 (<li key={dish.id}>{dish.title}</li>)
-             )} 
+                {props.list.map( dish =>
+                    (<li key={dish.id}>{dish.title}</li>)
+                )} 
              </ul>
-          
-           </div>
+
+          <img src={image} height={290} alt="add image" />
+        </main>
     )
 }
 
 // FOOTER COMPONENT
 function Footer(props){
     return(
-        <div><h1>This is the {props.name}</h1></div>
+        <footer><h1>This is the {props.name}</h1></footer>
     )
 }
-
+// you can either use React.Fragment or <>
 function PassingPropsIntoComponents(){
     return(
-        <React.StrictMode>
-            <Header name="Header Page" />,
-            <Main list = { item }/>,
+        <>
+            <Header name="Header Page" />
+            <Main list = { item }/>
             <Footer name = "Footer Page" />
-        </React.StrictMode>
+        </>
     )
 }
 
