@@ -1,16 +1,19 @@
 import React from 'react';  // In the latest React version its not necessary to import React 
-import ReactDOM from 'react-dom';
 import PassingPropsIntoComponents from './PassingPropsIntoComponents';
-
+import All from './RenderComponentConditionally';
 
 
 const App = () => {  // Here is where components are rendered. 
-    return (
+    {
+        return (
         <>
+            <All authorized={true} />
             <PassingPropsIntoComponents />
+            <AppTwo />
         </>
 
     )
+}
 }
 
 function AppTwo(){
@@ -24,10 +27,5 @@ function AppTwo(){
         </article>
     )
 }
-ReactDOM.render(
-    <>
-     <App /> 
-     <AppTwo />
-    </>
-     
-,document.getElementById("root"));
+
+export default App
