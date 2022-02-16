@@ -16,10 +16,11 @@ function RegularComponent(){
    )
 }
 
-function All(props){
+function All({authorized}){ // instead of props, we can destructure the props object
+    console.log(authorized)
    return( // inline tenary if statement
        <>
-           {props.authorized ? <SecretComponent />  :<RegularComponent />}
+           {authorized ? <SecretComponent />  :<RegularComponent />}
        </>
    )
 
