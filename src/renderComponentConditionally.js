@@ -5,8 +5,7 @@ import UseState from './UseState'
 
 function SecretComponent(){
     return(
-        <> 
-            
+        <>  
             <h1 style = {{color:"red", textAlign:"center"}}> Classified information for authorized users only </h1>
         </>
     )
