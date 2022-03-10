@@ -15,3 +15,8 @@ const CreateElement = () => {
 }
 
 export default CreateElement;
+
+/** 
+ * Here, we created a React element( strong, p, and h2 ) and added some attributes. 
+ * 
+ * */ 
