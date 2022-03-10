@@ -17,3 +17,10 @@ const Props = (props) => {
 
 
 export default Props;
+
+/** 
+ * React props and their corresponding values are CREATED
+ * at where React components are RENDERED
+ * 
+ * React props are RENDERED where components are CREATED.
+*/

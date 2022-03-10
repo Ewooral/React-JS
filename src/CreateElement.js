@@ -4,8 +4,10 @@ const CreateElement = () => {
     return React.createElement(
         'div',
         {},
-        [React.createElement('p',{ style: { color:"yellow" }}, "who is happy that I am here?"),
-         React.createElement("h2", { style: { color:"#b55959"}}, "I have an interview with bloomberg")
+        [
+         React.createElement('strong',{ style: { color:"#969608" }},
+                React.createElement('p',{ style: { color:"#969608" }}, "Hello, World")),
+         React.createElement("h2", { style: { color:"#b55959"}}, "Creating React Element using React.createElement()")
          ]
      );
 

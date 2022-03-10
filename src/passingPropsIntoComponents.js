@@ -14,7 +14,7 @@ function Header(props){
     )
 }
 
-// MAIN COMPONENT
+// MAIN COMPONENT 
 function Main(props){
     return(
         <main style = {{textAlign:"center"}}>

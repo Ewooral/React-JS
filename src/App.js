@@ -2,6 +2,7 @@ import React from 'react';  // In the latest React version its not necessary to 
 import PassingPropsIntoComponents from './PassingPropsIntoComponents';
 import RenderComponentConditionally from './RenderComponentConditionally';
 import ArrayDestructuring from './arrayDestructuring';
+import RefactorElements from './RefactorElements';
 import CreateElement from './CreateElement';
 
 
@@ -14,6 +15,7 @@ const App = () => {  // Here is where components are rendered.
             <h2>{ArrayDestructuring.firstItem}</h2>
             <h2>{ArrayDestructuring.third}</h2>
 
+            <RefactorElements name= "WORLD" />
             <CreateElement />
            
         </>
