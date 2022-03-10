@@ -15,9 +15,6 @@ const App = () => {  // Here is where components are rendered.
             <h2>{ArrayDestructuring.third}</h2>
 
             <CreateElement />
-            <CreateElement />
-            <CreateElement />
-            <CreateElement />
            
         </>
 
