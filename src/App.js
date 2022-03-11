@@ -18,7 +18,7 @@ const App = () => {  // Here is where components are rendered.
 
             <RefactorElements name= "WORLD" />
             <CreateElement />
-            <List />
+            <List list = {List} />
            
         </>
 
