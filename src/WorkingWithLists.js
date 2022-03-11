@@ -9,9 +9,13 @@ const Lists = [
 
 Lists.map((x) => {
     console.log(x);
-})
+});
 
 
 
+const List = () =>{
+    return Lists
+}
 
-export default Lists
+
+export default List
