@@ -1,10 +1,12 @@
 import React from 'react'
+// import {Container, AppBar, Typography, Grow, Grid } from '@material-ui/core'
 
+import "./App.css";
 const App = () => {
   return (
-    <div>
-        <h1>App</h1>
-    </div>
+    <header className="Header">
+      <h1>Social Media App</h1>
+    </header>
   )
 }
 
