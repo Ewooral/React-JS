@@ -4,7 +4,7 @@ import RenderComponentConditionally from './RenderComponentConditionally';
 import ArrayDestructuring from './arrayDestructuring';
 import RefactorElements from './RefactorElements';
 import CreateElement from './CreateElement';
-import List from "./WorkingWithLists"
+import Show from "./WorkingWithLists"
 
 
 const App = () => {  // Here is where components are rendered. 
@@ -18,7 +18,7 @@ const App = () => {  // Here is where components are rendered.
 
             <RefactorElements name= "WORLD" />
             <CreateElement />
-            <List list = {List} />
+            <Show list = {Show} />
            
         </>
 

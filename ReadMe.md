@@ -24,3 +24,14 @@ ReactDOM.render(
 ## Note: Always start component names with a capital letter.
 
 [React treats components starting with lowercase letters as DOM tags. For example, <div /> represents an HTML div tag, but <Welcome /> represents a component and requires Welcome to be in scope.]
+
+
+INSERTION-SORT.A/
+1 for j = 2 to A.length
+2 key = A[j]
+3 // Insert AŒj  into the sorted sequence AŒ1 : : j 
+4 i D j  1
+5 while i> 0 and AŒi > key
+6 AŒi C 1 D AŒi
+7 i D i  1
+8 AŒi C 1 D key

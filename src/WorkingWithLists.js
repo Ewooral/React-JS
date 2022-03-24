@@ -7,24 +7,20 @@ const Lists = [
     "Banku with Tilapia"
 ] 
 
-// Lists.map((x) => {
-//     console.log(x);
-// });
+Lists.map((x) => {
+    console.log(x);
+});
 
 
 
-const List = () =>{
-    return (
-        Lists,
-        <Show />
-    )
-}
+
 
 const Show = (props) =>{
     return (
+       
         <>
             <ul>
-                {props.Lists.map((x) => console.log(x))}
+                {props.Lists.map((x) => (<li>{x}</li>))}
             </ul>
         </>
     )
@@ -32,4 +28,5 @@ const Show = (props) =>{
 
 
 
-export default List
+
+export default Show
