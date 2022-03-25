@@ -1,9 +1,14 @@
 import React from 'react'
+import Post from './Post/Post'
 
-const Post = () => {
+const Posts = () => {
   return (
-    <div>Post</div>
+    <>
+      <h1>POSTS</h1>
+      <Post />
+      <Post />
+    </>
   )
 }
 
-export default Post
+export default Posts
