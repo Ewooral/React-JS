@@ -1,32 +1,19 @@
 import React from 'react';
 
-const Lists = [
-    "Ga Beans",
-    "Milk and Tea",
-    "Rice with Stew",
-    "Banku with Tilapia"
-] 
+// include a list of items in the main component
 
-Lists.map((x) => {
-    console.log(x);
-});
+function Key(){
+    
+const items = [
+    "Laptops",
+    "Desktops",
+    "Tablets",
+    "Phones",
+    "Cameras"
+]
 
+const itemObject = items.map((dish, i) => ({id:i, title:dish}))
+return itemObject
 
-
-
-
-const Show = (props) =>{
-    return (
-       
-        <>
-            <ul>
-                {props.Lists.map((x) => (<li>{x}</li>))}
-            </ul>
-        </>
-    )
 }
-
-
-
-
-export default Show
+export default Key()
