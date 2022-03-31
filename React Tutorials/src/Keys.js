@@ -4,16 +4,16 @@ import React from 'react';
 
 function Key(){
     
-const items = [
-    "Laptops",
-    "Desktops",
-    "Tablets",
-    "Phones",
-    "Cameras"
+const countries = [
+    "Nigeria",
+    "Ghana",
+    "Congo",
+    "Mali",
+    "Mauricious"
 ]
 
-const itemObject = items.map((dish, i) => ({id:i, title:dish}))
-return itemObject
+const country = countries.map((country) => (<li>{country}</li>))
+return country
 
 }
 export default Key()

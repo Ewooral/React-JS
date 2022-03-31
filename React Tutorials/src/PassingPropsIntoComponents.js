@@ -22,7 +22,10 @@ function Main(props){
           <h1>List of items in our workshop:</h1>
          
              <ul>
-                {props.list.map( dish =>
+                {props.list.map( (dish, i) =>
+                     
+                    /* (<li key={i}> {dish} </li>), */
+    
                     (<li key={dish.id}>{dish.title}</li>)
                 )} 
              </ul>

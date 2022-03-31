@@ -4,6 +4,7 @@ import RenderComponentConditionally from './RenderComponentConditionally';
 import ArrayDestructuring from './arrayDestructuring';
 import RefactorElements from './RefactorElements';
 import CreateElement from './CreateElement';
+import country from './Keys'
 
 
 
@@ -18,11 +19,22 @@ const App = () => {  // Here is where components are rendered.
 
             <RefactorElements name= "WORLD" />
             <CreateElement />
+            <KeyComponent country = {country} />
            
         </>
 
     )
 }
+}
+
+const KeyComponent = (props) => {
+    return (
+        <>
+         <ul>
+             <li>{props.country}</li>
+         </ul>
+        </>
+    )
 }
 
 
