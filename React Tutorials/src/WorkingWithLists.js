@@ -9,7 +9,8 @@ const items = [
     "Desktops",
     "Tablets",
     "Phones",
-    "Cameras"
+    "Cameras",
+    "Fruitelly"
 ]
 
 const itemObject = items.map((dish, i) => ({id:i, title:dish}))

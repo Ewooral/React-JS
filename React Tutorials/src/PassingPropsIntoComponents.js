@@ -52,7 +52,7 @@ function PassingPropsIntoComponents(){
     return(
         <>
             <Header name="Header Page" />
-            <Main list = { item }/>
+            <Main list = { item } />
             <Footer name = "Footer Page" />
         </>
     )
