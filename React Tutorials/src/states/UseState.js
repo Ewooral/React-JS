@@ -23,7 +23,7 @@ take a pair. the first one is a state variable
           <h3>Currently, our light is {bulb}</h3>
           <span>Click the buttons to turn the light on or off</span>
 
-          {/* <div> */}
+          <div>
             <button> OFF </button>
             <button> OFF </button>
 
