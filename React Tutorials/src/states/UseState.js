@@ -21,7 +21,7 @@ take a pair. the first one is a state variable
        <div>
           <h1>React Hooks Tutorials</h1>
           <h3>Currently, our light is {bulb}</h3>
-          {/* <span>Click the buttons to turn the light on or off</span> */}
+          <span>Click the buttons to turn the light on or off</span>
 
           <div>
             <button> OFF </button>
