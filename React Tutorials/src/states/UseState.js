@@ -13,19 +13,40 @@ take a pair. the first one is a state variable
    - it takes in a second arg called dependency array
 
  */
-   
+
+ 
    const UseState = () => {
      const [bulb, setBulb] = useState("OFF")
-     console.log(bulb)
+     const [emotions, setEmotions] = useState("SAD")
+
+     useEffect(()=>{
+        console.log(bulb)
+     }, [bulb] )
+     
+
      return (
        <div>
           <h1>React Hooks Tutorials</h1>
-          <h3>Currently, our light is {bulb}</h3>
+          <h3>Currently, our light is {bulb} and I am {emotions} at the same time </h3>
+
           <span>Click the buttons to turn the light on or off</span>
 
           <div>
-            <button> OFF </button>
-            <button> OFF </button>
+
+            <button onClick={() => {
+              setBulb("ON")
+
+            }}> ON </button>
+
+
+            <button onClick={() => {
+              setBulb("OFF")
+            }}> OFF </button>
+
+
+            <button onClick={() => {
+              setBulb("OFF")
+            }}> OFF </button>
 
           </div>
        </div>
@@ -33,3 +54,93 @@ take a pair. the first one is a state variable
    }
    
    export default UseState
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const UseState = props => {
+//  const [bulb, setBulb] = useState("Off")
+
+//     useEffect(() => {
+//         console.log(` It's ${bulb} around here` )
+//     }, [bulb]
+//     )
+
+
+//   return (
+//       <>
+//         <div className='setbackground'>
+//           <h1> USE STATE TUTORIAL </h1>  
+//             <h3> click the botton to turn the bulb on or off </h3>
+//             <h3> Currently bulb is 
+//                 <span id='_ui' className="white"> { bulb }</span> 
+//             </h3>
+
+//             <button onClick = { () => {
+//                 setBulb("ON")
+
+//                     if(_ui.className == "white")
+//                         {
+//                             _ui.classList.replace("white", "yellow")
+//                         }
+//                     if (_ui.className == "off"){
+//                             _ui.classList.replace("off", "yellow")
+//                         }
+//                 } 
+//                 }>
+//                 on
+//             </button>
+
+//             <button onClick = { () => {
+//                 setBulb("OFF");
+
+//                     if(_ui.className == "white"){
+//                         _ui.classList.replace("white", "off")
+//                     }
+//                     else if (_ui.className == "yellow"){
+//                         _ui.classList.replace("yellow", "off")
+//                     }
+
+//                 }
+//             }>
+//                 off
+//             </button>
+
+//         </div>
+//       </>
+   
+
+//   )
+// }
+
+
+
+// export default UseState
