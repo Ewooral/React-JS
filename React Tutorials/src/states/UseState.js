@@ -22,6 +22,10 @@ take a pair. the first one is a state variable
      useEffect(()=>{
         console.log(bulb)
      }, [bulb] )
+
+     useEffect(()=>{
+        console.log(emotions)
+     }, [emotions] )
      
 
      return (
@@ -36,17 +40,22 @@ take a pair. the first one is a state variable
             <button onClick={() => {
               setBulb("ON")
 
-            }}> ON </button>
+            }}> On </button>
 
 
             <button onClick={() => {
               setBulb("OFF")
-            }}> OFF </button>
+            }}> Off </button>
 
 
             <button onClick={() => {
-              setBulb("OFF")
-            }}> OFF </button>
+              setEmotions("HAPPY")
+            }}> Happy </button>
+
+
+            <button onClick={() => {
+              setEmotions("SAD")
+            }}> Sad </button>
 
           </div>
        </div>
