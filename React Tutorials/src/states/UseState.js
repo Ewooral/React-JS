@@ -24,7 +24,7 @@ take a pair. the first one is a state variable
           <span>Click the buttons to turn the light on or off</span>
 
           <div>
-            {/* <button> OFF </button> */}
+            <button> OFF </button>
             <button> OFF </button>
 
           </div>
