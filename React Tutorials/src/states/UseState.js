@@ -14,7 +14,7 @@ take a pair. the first one is a state variable
 
  */
    
-  //  const UseState = () => {
+   const UseState = () => {
      return (
        <div>
           <h1>React Hooks Tutorials</h1>
