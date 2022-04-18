@@ -17,7 +17,7 @@ function Header(props){
 // MAIN COMPONENT 
 function Main(props){
     return(
-        <main style = {{textAlign:"center"}}>
+        <main>
              <h1>List of items in our workshop:</h1>
          
              <ul>

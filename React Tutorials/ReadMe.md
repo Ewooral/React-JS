@@ -25,7 +25,7 @@ ReactDOM.render(
 
 [React treats components starting with lowercase letters as DOM tags. For example, <div /> represents an HTML div tag, but <Welcome /> represents a component and requires Welcome to be in scope.]
 
-
+``` py
 INSERTION-SORT.A/
 1 for j = 2 to A.length
 2 key = A[j]

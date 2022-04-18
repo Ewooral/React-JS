@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.red{
+    background-color: rgb(130, 2, 2);
+    color:#ffffff;
+    outline: none;
+    border: solid 2px transparent;
+    border-radius: 1.8rem;
+    padding: .9rem;
+    font-size: 30px;
+    position: relative;
+    left: 1rem;
+}
+.green{
+    background-color: rgb(3, 83, 32);
+    color:#ffffff;
+    outline: none;
+    border: solid 2px transparent;
+    border-radius: 1.8rem;
+    padding: .9rem;
+    font-size: 30px;
+    position: relative;
+    left: 1rem;
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    color:#080808;
+    outline: none;
+    border: solid 2px transparent;
+    border-radius: 1.8rem;
+    padding: .9rem;
+    font-size: 30px;
+    position: relative;
+    left: 1rem;
+}
+
+.yellow{
+    background-color: rgb(244, 255, 148);
+    color:#303030;
+    outline: none;
+    border: solid 2px transparent;
+    border-radius: 1.8rem;
+    padding: .9rem;
+    font-size: 30px;
+    position: relative;
+    left: 1rem;
+}
+.off{
+    background-color: rgba(125, 125, 125, 0.578);
+    color:#08080846;
+    outline: none;
+    border: solid 2px transparent;
+    border-radius: 1.8rem;
+    padding: .9rem;
+    font-size: 30px;
+    position: relative;
+    left: 1rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 40vw 40vw auto;
+    /* grid-template-rows:40vw 40vw auto; */
+    column-gap: 2rem;
+    position: relative;
+}
+.setbackground{
+    background:rgb(209, 209, 209);
+    margin: 1rem;
+    padding: 2rem;
+}

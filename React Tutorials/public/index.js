@@ -1,6 +1,6 @@
 import React from 'react';  // In the latest React version its not necessary to import React 
 import ReactDOM from 'react-dom'; 
-import App from './App'
+import App from '../src/App'
 
  
 ReactDOM.render(

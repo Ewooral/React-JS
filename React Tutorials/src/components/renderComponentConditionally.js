@@ -6,7 +6,7 @@ import UseState from './UseState'
 function SecretComponent(){  
     return(
         <>  
-            <h1 style = {{color:"red", textAlign:"center"}}> Classified information for authorized users only </h1>
+            <h1 style = {{color:"red"}}> Classified information for authorized users only </h1>
         </>
     )
 }
@@ -15,7 +15,7 @@ function RegularComponent(){
 
    return(
         <>
-            <h1 style = {{color:"blue", textAlign:"center"}}> Information available for everyone </h1>
+            <h1 style = {{color:"blue"}}> Information available for everyone </h1>
             <UseState />
         </>
    )
@@ -26,7 +26,7 @@ function All({authorized}){
     // inline tenary if statement 
    return(                  
        <>
-           {authorized ? <SecretComponent />  :<RegularComponent />}
+           {authorized ? <SecretComponent />  : <RegularComponent />}
        </>
    )
 

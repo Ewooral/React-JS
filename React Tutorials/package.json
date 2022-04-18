@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel public/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Ewooral/React-JS#readme",
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
     "parcel": "^1.12.3",
     "prettier": "^2.5.1"
   },
@@ -26,9 +27,10 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "reactdom": "^2.0.0"
+    "reactdom": "^2.0.0",
+    "styled-components": "^5.3.5"
   },
-   "Browserslist": [
+  "Browserslist": [
     "last two Chrome versions"
   ]
 }

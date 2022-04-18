@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 
 const [firstItem, secondItem, thirdItem] = ["boots", "tent", "headlamp"]  // destructuring 
 const [, , third] = ["Kamboo", "Socks", "hairbrush"]  // destructuring 
@@ -23,9 +23,23 @@ console.log(isVerified); // true
 
 // A variable can be assigned its value with destructuring 
 // separate from its declaration.
+let y, z;
+
+({y, z} = {y: 1, z: 2});
 
 
-console.log(firstItem, third, rest)
+const o = {p: 42, q: true};
+const {p: foo, q: bar} = o;
+
+console.log(foo); // 42
+console.log(bar); // true
+
+let obj = {self: '123'};
+obj.__proto__.prot = '456';
+const {self, prot} = obj;
+console.log(self, prot)
+
+console.log(firstItem, third, rest, y, z)
 
 
-// export default {firstItem, third}
+export default {firstItem, third}
