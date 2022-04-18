@@ -16,7 +16,7 @@ take a pair. the first one is a state variable
    
    const UseState = () => {
      return (
-       <div>
+      //  <div>
           <h1>React Hooks Tutorials</h1>
        </div>
      )
