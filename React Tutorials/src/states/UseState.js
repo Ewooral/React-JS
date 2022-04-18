@@ -25,7 +25,7 @@ take a pair. the first one is a state variable
 
           <div>
             <button> OFF </button>
-            {/* <button> OFF </button> */}
+            <button> OFF </button>
 
           </div>
        </div>
