@@ -10,7 +10,7 @@ body{
     padding: .9rem;
     font-size: 30px;
     position: relative;
-    left: 1rem;
+
 }
 .green{
     background-color: rgb(3, 83, 32);
@@ -21,8 +21,8 @@ body{
     padding: .9rem;
     font-size: 30px;
     position: relative;
-    left: 1rem;
 }
+
 .white{
     background-color: rgb(255, 255, 255);
     color:#080808;
@@ -32,8 +32,8 @@ body{
     padding: .9rem;
     font-size: 30px;
     position: relative;
-    left: 1rem;
 }
+
 
 .yellow{
     background-color: rgb(244, 255, 148);
@@ -43,9 +43,9 @@ body{
     border-radius: 1.8rem;
     padding: .9rem;
     font-size: 30px;
-    position: relative;
-    left: 1rem;
+    position: relative;    
 }
+
 .off{
     background-color: rgba(125, 125, 125, 0.578);
     color:#08080846;
@@ -55,7 +55,6 @@ body{
     padding: .9rem;
     font-size: 30px;
     position: relative;
-    left: 1rem;
 }
 
 main{
